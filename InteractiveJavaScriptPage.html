@@ -1,0 +1,45 @@
+<!--
+    <!DOCTYPE html>
+        <head>
+            <style>
+                p {
+                    color: #6a5acd; 
+                    font-size: 36px;
+                    text-align: center;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
+                }
+            </style>
+        </head>
+        <body>
+            <p>Hello World</p>
+        </body>
+    </html>
+
+    ignore this
+-->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> 'Interactive page'</title>
+    </head>
+    <body>
+        <div id="interactiveDiv">
+            Click to change...
+        </div>
+        <script defer>
+            const interactiveDiv = document.getElementById('interactiveDiv');
+            interactiveDiv.addEventListener('click', () => {
+            interactiveDiv.textContent = 'Good job :)';
+        });
+
+        console.log('Page loaded');
+
+        const userInput = prompt('Enter something then click on it:');
+        
+        interactiveDiv.textContent = `You entered: ${userInput}`;
+
+        </script>
+    </body>
+</html>
